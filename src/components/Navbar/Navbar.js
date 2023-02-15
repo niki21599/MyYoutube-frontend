@@ -1,24 +1,15 @@
 import React from "react";
 import "./Navbar.css";
-
 import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
-
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-
 import SearchIcon from "@mui/icons-material/Search";
-import AccountCircle from "@mui/icons-material/AccountCircle";
-import SettingsIcon from "@mui/icons-material/Settings";
-import MoreIcon from "@mui/icons-material/MoreVert";
-import LogoutIcon from "@mui/icons-material/Logout";
 import { Link } from "react-router-dom";
-import { PropaneSharp } from "@mui/icons-material";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 const Search = styled("div")(({ theme }) => ({
@@ -97,7 +88,6 @@ export default function Navbar({ search }) {
     </Menu>
   );
 
-  //css-hyum1k-MuiToolbar-root
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" sx={{ bgcolor: "green" }}>

@@ -1,8 +1,7 @@
-import { dividerClasses } from "@mui/material";
 import React from "react";
 import "./Searchpage.css";
 import SearchDetailCard from "../SearchDetailCard/SearchDetailCard";
-import { Navigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import youtube from "../../api/youtube";
 import CircularProgress from "@mui/material/CircularProgress";
@@ -14,17 +13,7 @@ export default function Searchpage(props) {
   let [loading, setLoading] = React.useState(false);
   let [error, setError] = React.useState("");
 
-  let [videos, setVideos] = React.useState([
-    {
-      id: { videoId: "fnTau3KBAXE" },
-      snippet: {
-        title: "",
-        channelTitle: "",
-        description: "",
-        thumbnails: { medium: { url: "" } },
-      },
-    },
-  ]);
+  let [videos, setVideos] = React.useState([]);
 
   let searchVideos = () => {
     setLoading(true);

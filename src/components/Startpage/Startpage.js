@@ -2,7 +2,6 @@ import React from "react";
 import "./Startpage.css";
 import VideoDetailCard from "../VideoDetailCard/VideoDetailCard";
 import Categorybar from "../Categorybar/Categorybar";
-import { Navigate } from "react-router-dom";
 import { useEffect } from "react";
 import youtube from "../../api/youtube";
 import CircularProgress from "@mui/material/CircularProgress";
@@ -10,26 +9,11 @@ import Alert from "@mui/material/Alert";
 import AlertTitle from "@mui/material/AlertTitle";
 
 export default function Startpage(props) {
-  let [videos, setVideos] = React.useState([
-    {
-      id: { videoId: "fnTau3KBAXE" },
-      snippet: {
-        title: "",
-        description: " ",
-        thumbnails: { medium: { url: "" } },
-      },
-    },
-  ]);
+  let [videos, setVideos] = React.useState([]);
 
   let [loading, setLoading] = React.useState(false);
   let [error, setError] = React.useState("");
 
-  let MUSIC_ID = 10;
-  let GAMING_ID = 20;
-  let COMEDY_ID = 23;
-  let SPORTS_ID = 17;
-  let FILM_ID = 1;
-  let NEWS_ID = 25;
   let ENTERTAINMENT_ID = 24;
 
   let searchByCategory = (cat) => {

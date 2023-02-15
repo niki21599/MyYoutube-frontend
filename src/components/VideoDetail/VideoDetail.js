@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./VideoDetail.css";
 import VideoPlayCard from "../VideoPlayCard/VideoPlayCard";
 import SearchDetailCard from "../SearchDetailCard/SearchDetailCard";
-import { Navigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import youtube from "../../api/youtube";
 import { CircularProgress } from "@mui/material";
 import Alert from "@mui/material/Alert";
@@ -15,27 +15,9 @@ export default function VideoDetail(props) {
   let [errorVideo, setErrorVideo] = React.useState("");
   let [errorVideos, setErrorVideos] = React.useState("");
 
-  let [video, setVideo] = React.useState({
-    id: { videoId: "fnTau3KBAXE" },
-    snippet: {
-      title: "",
-      channelTitle: "fjdskl",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint in impedit reprehenderit ducimus illum earum laboriosam. Explicabo mollitia magni omnis. Mollitia, nesciunt aspernatur accusantium reprehenderit facere ex vero porro similique.",
-      thumbnails: { medium: { url: "" } },
-    },
-  });
+  let [video, setVideo] = React.useState({});
 
-  let [videos, setVideos] = React.useState([
-    {
-      id: { videoId: "" },
-      snippet: {
-        title: "",
-        description: " ",
-        thumbnails: { medium: { url: "" } },
-      },
-    },
-  ]);
+  let [videos, setVideos] = React.useState([]);
 
   let searchVideo = () => {
     setLoadingVideo(true);
@@ -112,7 +94,14 @@ export default function VideoDetail(props) {
               </div>
             )}
           </div>
-          <h2 className="heading-bottom-video">Das könnte dir auch gefallen</h2>
+          {loadingVideo ? (
+            ""
+          ) : (
+            <h2 className="heading-bottom-video">
+              Das könnte dir auch gefallen
+            </h2>
+          )}
+
           <div
             style={{
               display: "flex",
