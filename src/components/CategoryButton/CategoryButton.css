@@ -1,0 +1,29 @@
+.categoryButton {
+  padding: 2px 12px 2px 12px !important;
+  border-radius: 20px !important;
+  color: black !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  margin-right: 2px !important;
+  margin-left: 2px !important;
+}
+
+.categoryButton:hover {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.active {
+  color: white !important;
+  border-color: black !important;
+  background-color: black !important;
+}
+
+.active:hover {
+  background-color: black !important;
+}
+
+@media (max-width: 572px) {
+  .responsive-Button {
+    display: none !important;
+  }
+}

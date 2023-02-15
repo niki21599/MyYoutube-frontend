@@ -1,0 +1,22 @@
+.description-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.videoPlayCard {
+    height: calc(100vw / 1.77);
+}
+
+@media (max-width: 400px) {
+    .description-flex {
+        flex-direction: column;
+    }
+}
+
+.overflow-hidden {
+    display: -webkit-box !important;
+    overflow: hidden !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 4 !important;
+    text-overflow: "";
+}

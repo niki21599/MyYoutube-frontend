@@ -1,0 +1,13 @@
+.videoDetail {
+  scroll-behavior: smooth;
+}
+
+.spinner-video {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.margin-bottom {
+  margin-bottom: 24px;
+}

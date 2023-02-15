@@ -1,0 +1,16 @@
+.space-between {
+    display: flex !important;
+    justify-content: space-between;
+}
+
+.inherit {
+    width: inherit;
+}
+
+.noDecoration {
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 50px;
+}
