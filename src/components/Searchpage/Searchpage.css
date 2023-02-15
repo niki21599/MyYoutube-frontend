@@ -8,3 +8,13 @@
     display: flex;
     justify-content: center;
 }
+
+.heading-top-search {
+    color: black;
+    text-align: center;
+    margin-top: 84px;
+}
+
+.margin-top-search {
+    margin-top: 0;
+}

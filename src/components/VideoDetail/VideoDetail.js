@@ -112,7 +112,7 @@ export default function VideoDetail(props) {
               </div>
             )}
           </div>
-
+          <h2 className="heading-bottom-video">Das könnte dir auch gefallen</h2>
           <div
             style={{
               display: "flex",

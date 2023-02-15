@@ -60,16 +60,20 @@ export default function Searchpage(props) {
 
   return (
     <div className="display-center">
+      <h2 className="heading-top-search">
+        {" "}
+        {`Deine Suchergebnisse zu "${searchTerm}"`}
+      </h2>
       {!loading ? (
         error ? (
-          <div className="margin-top">
+          <div className="margin-top-search">
             <Alert severity="error">
               <AlertTitle>Error</AlertTitle>
               {error}
             </Alert>
           </div>
         ) : (
-          <div className="margin-top display-center">
+          <div className="margin-top-search display-center">
             {videos.map((video) => {
               return (
                 <SearchDetailCard key={video.snippet.title} video={video} />

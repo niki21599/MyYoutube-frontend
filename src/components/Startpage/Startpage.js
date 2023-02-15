@@ -70,6 +70,7 @@ export default function Startpage(props) {
     <div>
       <div className="margin-top">
         <Categorybar searchByCategory={searchByCategory} />
+        <h1 className="heading-top-start">Die beliebtesten Videos</h1>
         {!loading ? (
           <div>
             {error ? (
