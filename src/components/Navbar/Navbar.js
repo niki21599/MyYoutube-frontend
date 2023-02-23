@@ -58,7 +58,6 @@ export default function Navbar({ search }) {
   };
 
   const searchVideos = () => {
-    console.log("Searching with query: ", searchQuery);
     search(searchQuery);
   };
 
