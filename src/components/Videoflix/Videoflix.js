@@ -14,25 +14,34 @@ export default function Videoflix() {
   const navigate = useNavigate();
 
   let search = (term) => {
-    navigate("/search/" + term);
+    navigate("/videoflix_frontend/search/" + term);
   };
 
   return (
     <div>
       <Navbar search={search} />
       <Routes>
-        <Route path="/" element={<Startpage loggedIn={true} />}></Route>
         <Route
-          path="/search/:searchTerm"
+          path="/videoflix_frontend"
+          element={<Startpage loggedIn={true} />}
+        ></Route>
+        <Route
+          path="/videoflix_frontend/search/:searchTerm"
           element={<Searchpage loggedIn={true} />}
         ></Route>
         <Route
-          path="/video/:videoId"
+          path="/videoflix_frontend/video/:videoId"
           forceRefresh={true}
           element={<VideoDetail loggedIn={true} />}
         ></Route>
-        <Route path="/impressum" element={<Impressum />}></Route>
-        <Route path="/datenschutz" element={<Datenschutz />}></Route>
+        <Route
+          path="/videoflix_frontend/impressum"
+          element={<Impressum />}
+        ></Route>
+        <Route
+          path="/videoflix_frontend/datenschutz"
+          element={<Datenschutz />}
+        ></Route>
       </Routes>
     </div>
   );

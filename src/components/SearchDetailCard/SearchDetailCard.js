@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 export default function SearchDetailCard(props) {
   return (
     <Link
-      to={"/video/" + props.video.id.videoId}
+      to={"/videoflix_frontend/video/" + props.video.id.videoId}
       className="noDecoration search-card"
     >
       <Card sx={{ display: "flex" }} className="search-card-detail">
