@@ -78,10 +78,10 @@ export default function Navbar({ search }) {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <Link to="/videoflix_frontend/impressum" className="noDecoration">
+      <Link to="/impressum" className="noDecoration">
         <MenuItem onClick={handleMenuClose}>Impressum</MenuItem>
       </Link>
-      <Link to="/videoflix_frontend/datenschutz" className="noDecoration">
+      <Link to="/datenschutz" className="noDecoration">
         <MenuItem onClick={handleMenuClose}> Datenschutz</MenuItem>
       </Link>
     </Menu>
@@ -91,12 +91,8 @@ export default function Navbar({ search }) {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" sx={{ bgcolor: "green" }}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <Link to="/videoflix_frontend/" c>
-            <img
-              src="/videoflix_frontend/img/logo.png"
-              alt="logo"
-              className="logo-img"
-            />
+          <Link to="/" c>
+            <img src="/img/logo.png" alt="logo" className="logo-img" />
           </Link>
 
           <Search className="space-between">

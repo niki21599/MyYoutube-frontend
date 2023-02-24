@@ -10,10 +10,7 @@ import { Link } from "react-router-dom";
 export default function VideoDetailCard(props) {
   return (
     <div className="card">
-      <Link
-        to={"/videoflix_frontend/video/" + props.video.id.videoId}
-        className="noDecoration"
-      >
+      <Link to={"/video/" + props.video.id.videoId} className="noDecoration">
         <Card
           sx={{
             minWidth: "300px",
