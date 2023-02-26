@@ -92,7 +92,11 @@ export default function Navbar({ search }) {
       <AppBar position="fixed" sx={{ bgcolor: "green" }}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
           <Link to="/" c>
-            <img src="/img/logo.png" alt="logo" className="logo-img" />
+            <img
+              src="/videoflix_frontend/img/logo.png"
+              alt="logo"
+              className="logo-img"
+            />
           </Link>
 
           <Search className="space-between">
