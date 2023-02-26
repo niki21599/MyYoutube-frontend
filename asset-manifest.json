@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/videoflix_frontend/static/css/main.4de3c9eb.css",
-    "main.js": "/videoflix_frontend/static/js/main.be89a7fb.js",
+    "main.js": "/videoflix_frontend/static/js/main.5f0cc727.js",
     "static/js/787.479e90f0.chunk.js": "/videoflix_frontend/static/js/787.479e90f0.chunk.js",
     "index.html": "/videoflix_frontend/index.html",
     "main.4de3c9eb.css.map": "/videoflix_frontend/static/css/main.4de3c9eb.css.map",
-    "main.be89a7fb.js.map": "/videoflix_frontend/static/js/main.be89a7fb.js.map",
+    "main.5f0cc727.js.map": "/videoflix_frontend/static/js/main.5f0cc727.js.map",
     "787.479e90f0.chunk.js.map": "/videoflix_frontend/static/js/787.479e90f0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4de3c9eb.css",
-    "static/js/main.be89a7fb.js"
+    "static/js/main.5f0cc727.js"
   ]
 }
